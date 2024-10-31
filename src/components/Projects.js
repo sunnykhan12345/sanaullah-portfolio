@@ -21,7 +21,7 @@ const Projects = () => {
                         <div className='flex gap-2 md:justify-normal justify-center'>
                             <Link href="https://quadsol.co/" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">live site</Link>
                             |
-                            <Link href="https://github.com/abdulaziz4444/quadruple" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">github</Link>
+                            <Link href="https://github.com/abdulaziz4444" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">github</Link>
                         </div>
                     </div>
                 </div>

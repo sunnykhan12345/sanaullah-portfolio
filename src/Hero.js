@@ -10,8 +10,9 @@ import { Arrow } from '../public/icons/Icons';
 const Hero = () => {
   return (
     <section className='lg:py-16 md:py-12 py-8 bg-[#EBF8F5]'>
-      <div className='md:container mx-auto  2xl:px-5 xl:px-0 px-5'>
-        <div className='flex 2xl:gap-44 lg:gap-0 md:gap-10 gap-5  lg:flex-nowrap flex-wrap'>
+      <div className='md:container mx-auto  px-5'>
+        <div className='flex 2xl:gap-44 xl:gap-28 lg:gap-0 md:gap-10 gap-5  lg:flex-nowrap flex-wrap'>
+          {/* left side */}
           <div className='lg:w-7/12 w-full flex flex-col xl:mt-16 lg:mt-10 md:mt-6 mt-0'data-aos="fade-down">
             <h5 className='font-serif font-medium 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-2xl capitalize text-dark-black md:text-start text-center r'>hi,</h5>
             <h5 className='font-serif font-medium 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-2xl  capitalize md:py-4 py-0.5 text-dark-black md:text-start text-center r'>i&#39;m
@@ -20,7 +21,7 @@ const Hero = () => {
             <h5 className='font-serif font-medium 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-2xl capitalize text-dark-black md:text-start text-center r'>front-end developer</h5>
             <p className=' font-normal md:text-base text-sm text-half-black xl:w-11/12 lg:w-10/12 md:text-start text-center  lg:mt-8 md:mt-6 mt-2'>I&#39;m a Front-End Developer with a proven track record of delivering high-quality, responsive, and interactive web applications. Expert in Next.js, React, and Tailwind CSS, with a strong foundation in HTML, CSS, and JavaScript. Adept at translating complex design requirements into visually appealing and I&#39;m open to Job opportunities where I can contribute, learn and grow. If you have A good opportunity that matches my skills and experience then don't hesitate to contact me..</p>
             <div className='lg:mt-8 mt-4 flex items-center lg:gap-16 md:gap-12 gap-5 md:justify-normal justify-center'>
-            <Link href="#" className="w-fit bg-orange md:py-1 py-0.5 md:px-3 px-2 rounded-full flex items-center md:gap-x-2 gap-x-1 border border-[#D0D5DD] group transition-all duration-500 ease-in-out transform hover:bg-white hover:scale-105"data-aos="zoom-out-down">
+            <Link href="#contact" className="w-fit bg-orange md:py-1 py-0.5 md:px-3 px-2 rounded-full flex items-center md:gap-x-2 gap-x-1 border border-[#D0D5DD] group transition-all duration-500 ease-in-out transform hover:bg-white hover:scale-105"data-aos="zoom-out-down">
                       <span href="#" className="font-medium font-serif lg:text-xl md:text-lg text-base text-white capitalize group-hover:text-orange">Reach Out</span>
                       <Arrow className="md:w-[30px] w-[20px] group-hover:rotate-45 transition-all text-white duration-500 group-hover:text-orange" /></Link>
                     
@@ -48,6 +49,7 @@ const Hero = () => {
             </ul>
             </div>
           </div>
+          {/* right side */}
           <div className='lg:w-5/12 w-full' data-aos="fade-up">
             <Image src="/images/abdul.png" alt='abdul aziz picture' width={409} height={454} className='lg:w-[409px] w-full' />
           </div>

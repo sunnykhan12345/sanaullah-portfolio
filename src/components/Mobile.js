@@ -23,7 +23,7 @@ const Mobile = () => {
                 )}
 
                 <div
-                    className={`fixed top-0 right-0 bg-[#EBEBEB] z-10 h-full w-[300px] flex flex-col justify-center items-center transform transition-transform duration-500 ease-in-out ${open ? "translate-x-0" : "translate-x-full"
+                    className={`fixed top-0 right-0 bg-[#EBEBEB] z-20 h-screen w-[300px] flex flex-col justify-center items-center transform transition-transform duration-500 ease-in-out ${open ? "translate-x-0" : "translate-x-full"
                         }`}
                 >
                     <div
@@ -44,7 +44,7 @@ const Mobile = () => {
                             <Link href="#projects" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>project</Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>contact</Link>
+                            <Link href="#contact" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>contact</Link>
                         </li>
 
                     </ul>
