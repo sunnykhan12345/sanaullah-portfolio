@@ -35,20 +35,20 @@ const Mobile = () => {
 
                     <ul className='flex flex-col gap-y-8'>
                         <li>
-                            <Link href="#" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-serif'>about</Link>
+                            <Link href="/" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>home</Link>
                         </li>
                         <li>
-                            <Link href="#skills" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-serif'>skills</Link>
+                            <Link href="#skills" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>skills</Link>
                         </li>
                         <li>
-                            <Link href="#projects" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-serif'>project</Link>
+                            <Link href="#projects" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>project</Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-serif'>contact</Link>
+                            <Link href="#" className='text-black font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans'>contact</Link>
                         </li>
 
                     </ul>
-                    <Link href="/resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange py-[0.5rem]  px-[0.9rem] text-black font-normal lg:text-xl text-base font-serif rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange md:mt-0 mt-8">resume</Link>
+                    <Link href="/resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange py-[0.5rem]  px-[0.9rem] text-black font-normal lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange md:mt-0 mt-8">resume</Link>
                 </div>
             </div>
         </>
