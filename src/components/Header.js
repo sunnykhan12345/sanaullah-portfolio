@@ -8,7 +8,7 @@ const Header = () => {
  
     return (
         <>
-            <nav className={`z-50 bg-[#EBF8F5] sticky top-0 transition-transform duration-500`}>
+            <nav className={`z-50 bg-[#EBF8F5] sticky top-0`}>
                 <div className='md:flex hidden justify-between items-center bg-dark-black py-[0.2rem] xl:px-5 px-2'>
                     <Link href="/">
                         <Image src="/images/aziz.png" alt="logo" width={70} height={70} />
@@ -27,7 +27,7 @@ const Header = () => {
                             <Link href="#contact" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:underline font-sans">contact</Link>
                         </li>
                     </ul>
-                    <Link href="/resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange xl:py-[0.8rem] py-[0.6rem] xl:px-[1.6rem] px-[1rem] text-white font-bold lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange">resume
+                    <Link href="/Abdul-Resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange xl:py-[0.8rem] py-[0.6rem] xl:px-[1.6rem] px-[1rem] text-white font-bold lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange">resume
                     </Link>
                 </div>
                 <div className='md:hidden flex justify-between items-center bg-dark-black py-[0.2rem] px-3 z-30'>

@@ -48,7 +48,7 @@ const Mobile = () => {
                         </li>
 
                     </ul>
-                    <Link href="/resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange py-[0.5rem]  px-[0.9rem] text-black font-normal lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange md:mt-0 mt-8">resume</Link>
+                    <Link href="/Abdul-Resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange py-[0.5rem]  px-[0.9rem] text-black font-normal lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange md:mt-0 mt-8">resume</Link>
                 </div>
             </div>
         </>
