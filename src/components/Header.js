@@ -15,16 +15,16 @@ const Header = () => {
                     </Link>
                     <ul className="flex xl:gap-20 lg:gap-16 gap-10">
                         <li>
-                            <Link href="/" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:underline font-sans">home</Link>
+                            <Link href="/" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">home</Link>
                         </li>
                         <li>
-                            <Link href="#skills" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:underline font-sans">skills</Link>
+                            <Link href="#skills" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">skills</Link>
                         </li>
                         <li>
-                            <Link href="#projects" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:underline font-sans">project</Link>
+                            <Link href="#projects" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">project</Link>
                         </li>
                         <li>
-                            <Link href="#contact" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:underline font-sans">contact</Link>
+                            <Link href="#contact" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">contact</Link>
                         </li>
                     </ul>
                     <Link href="/Abdul-Resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange xl:py-[0.8rem] py-[0.6rem] xl:px-[1.6rem] px-[1rem] text-white font-bold lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange">resume
