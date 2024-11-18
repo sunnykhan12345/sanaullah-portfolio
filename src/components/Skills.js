@@ -13,7 +13,7 @@ const Skills = () => {
       <section className='xl:py-20 lg:py-16 md:py-12 py-8 bg-[#171717] bg-cover bg-skillbg lg:rounded-tl-[30px] lg:rounded-tr-[30px] rounded-tl-3xl rounded-tr-3xl' id='skills'>
         <div className='md:container mx-auto px-5'>
           <h2 className='text-orange xl:text-4xl lg:text-3xl md:text-2xl text-xl uppercase font-semibold font-serif md:text-start text-center' data-aos="fade-down">Expertise</h2>
-          <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:gap-4 gap-3 xl:mt-12 lg:mt-10 md:mt-8 mt-4'>
+          <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:gap-4 gap-3 xl:mt-12 lg:mt-10 md:mt-8 mt-4'data-aos="zoom-in-up">
             {/* card 1 */}
             <Link href="https://www.w3schools.com/html/" target='blank' className='md:px-2 md:py-12 py-6 backdrop-blur-sm bg-[#68686833]/20 hover:bg-gradient-to-r from-yellow-100/20 to-red-300/20   border border-[#515262] duration-300 rounded-lg'>
               <h2 className='text-center text-white capitalize font-mono font-medium md:text-3xl text-xl'>HTML</h2>

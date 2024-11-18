@@ -13,7 +13,7 @@ const Hero = () => {
       <div className='md:container mx-auto  px-5'>
         <div className='flex 2xl:gap-72 xl:gap-28 lg:gap-0 md:gap-10 gap-5  lg:flex-nowrap flex-wrap'>
           {/* left side */}
-          <div className='lg:w-7/12 w-full flex flex-col xl:mt-16 lg:mt-10 md:mt-6 mt-0' data-aos="fade-down">
+          <div className='lg:w-7/12 w-full flex flex-col xl:mt-16 lg:mt-10 md:mt-6 mt-0' data-aos="zoom-in-down">
             <h5 className='font-serif font-medium 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-2xl capitalize text-dark-black md:text-start text-center r'>hi,</h5>
             <h5 className='font-serif font-medium 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-2xl  capitalize md:py-4 py-0.5 text-dark-black md:text-start text-center r'>i&#39;m
               <span className='text-orange'> abdul aziz</span>
@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
           </div>
           {/* right side */}
-          <div className='lg:w-5/12 w-full' data-aos="fade-up">
+          <div className='lg:w-5/12 w-full' data-aos="zoom-in-up">
             <Image src="/images/abdul.png" alt='abdul aziz picture' width={409} height={454} className='lg:w-[409px] w-full' />
           </div>
         </div>

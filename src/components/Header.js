@@ -8,7 +8,7 @@ const Header = () => {
  
     return (
         <>
-            <nav className={`z-50 bg-[#EBF8F5] sticky top-0`}>
+            <nav className={`z-50 bg-[#EBF8F5] sticky top-0`} data-aos="fade-down">
                 <div className='md:flex hidden justify-between items-center bg-dark-black py-[0.2rem] xl:px-5 px-2'>
                     <Link href="/">
                         <Image src="/images/aziz.png" alt="logo" width={70} height={70} />
