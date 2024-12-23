@@ -10,25 +10,24 @@ const Header = () => {
         <>
             <nav className={`z-50 bg-[#EBF8F5] sticky top-0`} data-aos="fade-down">
                 <div className='md:flex hidden justify-between items-center bg-dark-black py-[0.2rem] xl:px-5 px-2'>
-                    <Link href="/">
+                    <Link href="/" data-aos="fade-down" data-aos-delay="200">
                         <Image src="/images/aziz.png" alt="logo" width={70} height={70} />
                     </Link>
                     <ul className="flex xl:gap-20 lg:gap-16 gap-10">
-                        <li>
+                        <li data-aos="fade-down" data-aos-delay="300">
                             <Link href="/" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">home</Link>
                         </li>
-                        <li>
+                        <li data-aos="fade-down" data-aos-delay="400">
                             <Link href="#skills" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">skills</Link>
                         </li>
-                        <li>
+                        <li data-aos="fade-down" data-aos-delay="500">
                             <Link href="#projects" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">project</Link>
                         </li>
-                        <li>
+                        <li data-aos="fade-down" data-aos-delay="600">
                             <Link href="#contact" className="text-white font-normal xl:text-xl text-base capitalize transition-all duration-500 hover:text-orange font-sans">contact</Link>
                         </li>
                     </ul>
-                    <Link href="/Abdul-Resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange xl:py-[0.8rem] py-[0.6rem] xl:px-[1.6rem] px-[1rem] text-white font-bold lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange">resume
-                    </Link>
+                    <Link href="/Abdul-Resume.pdf" target='blank' download="Abdul_Aziz_Resume.pdf" className="bg-orange xl:py-[0.8rem] py-[0.6rem] xl:px-[1.6rem] px-[1rem] text-white font-bold lg:text-xl text-base font-sans rounded-full capitalize tracking-custom font-lufga transition-all duration-500 ease-in-out transform hover:bg-white hover:text-orange" data-aos="fade-down" data-aos-delay="700">resume</Link>
                 </div>
                 <div className='md:hidden flex justify-between items-center bg-dark-black py-[0.2rem] px-3 z-30'>
                     <Link href="/" className='md:hidden block'>
