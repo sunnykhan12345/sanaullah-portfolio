@@ -38,7 +38,7 @@ const Contact = () => {
             <div className='md:container mx-auto px-5'>
                 <div className='flex lg:flex-nowrap flex-wrap 2xl:gap-32 xl:gap-28 lg:gap-24 md:gap-12 gap-6'>
                     {/* left side */}
-                    <div className='lg:w-5/12 w-full 2xl:mt-16 lg:mt-12' data-aos="fade-down">
+                    <div className='lg:w-5/12 w-full 2xl:mt-16 lg:mt-12' >
                         <h2 className='xl:text-3xl lg:text-2xl md:text-xl text-lg uppercase font-semibold font-lufga md:text-start text-center text-[#232424]' >
                             contact <span className='text-goldenyellow'>with me</span>
                         </h2>
@@ -68,7 +68,7 @@ const Contact = () => {
                         </div>
                     </div>
                     {/* right side */}
-                    <form onSubmit={handleSubmit} className="lg:w-6/12 w-full border border-[#2D4F46] border-opacity-30 p-4 lg:space-y-6 md:space-y-5 space-y-3 rounded-xl" data-aos="fade-up">
+                    <form onSubmit={handleSubmit} className="lg:w-6/12 w-full border border-[#2D4F46] border-opacity-30 p-4 lg:space-y-6 md:space-y-5 space-y-3 rounded-xl">
                         <div>
                             <label className="block capitalize text-half-black font-lufga font-medium mb-1 md:text-base text-sm" htmlFor="name">
                                 name

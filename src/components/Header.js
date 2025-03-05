@@ -23,7 +23,7 @@ const Header = () => {
             </li>
             <li data-aos="fade-down" data-aos-delay="400">
               <Link
-                href="#skills"
+                href="/#skills"
                 className="text-white font-semibold md:text-base text-sm font-lufga capitalize transition-all duration-500 hover:text-goldenyellow font-sans"
               >
                 skills
@@ -31,7 +31,7 @@ const Header = () => {
             </li>
             <li data-aos="fade-down" data-aos-delay="500">
               <Link
-                href="#projects"
+                href="/#projects"
                 className="text-white font-semibold md:text-base text-sm font-lufga capitalize transition-all duration-500 hover:text-goldenyellow font-sans"
               >
                 project
@@ -39,7 +39,7 @@ const Header = () => {
             </li>
             <li data-aos="fade-down" data-aos-delay="600">
               <Link
-                href="#contact"
+                href="/#contact"
                 className="text-white font-semibold md:text-base text-sm font-lufga capitalize transition-all duration-500 hover:text-goldenyellow font-sans"
               >
                 contact

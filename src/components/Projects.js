@@ -39,6 +39,7 @@ const Services = () => {
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
       data-aos-offset="0"
+      id="projects"
     >
       <div className="md:container mx-auto px-5">
         <h2
