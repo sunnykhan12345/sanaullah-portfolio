@@ -1,50 +1,104 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import Image from "next/image";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ProjectsData from "./ProjectsData";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
-const Projects = () => {
-    return (
-        <section className='xl:py-20 lg:py-16 md:py-12 py-8' id='projects'>
-            <div className='md:container mx-auto px-5'>
-                <h2 className='text-dark-black xl:text-4xl lg:text-3xl md:text-2xl text-xl uppercase font-semibold font-serif md:text-start text-center' data-aos="fade-down">Latest
-                    <span className='text-orange'> Projects</span></h2>
-                {/* project 1 */}
-                <div className='xl:mt-14 lg:mt-10 md:mt-8 mt-4 flex xl:gap-28 lg:gap-20 md:gap-8 gap-4 lg:flex-nowrap flex-wrap'>
-                    <Link href="#" className='lg:w-5/12 w-full' data-aos="zoom-out">
-                        <Image src="/images/umrah.png" alt='quadruple' width={400} height={400} className='rounded-xl border-2 w-full' />
-                    </Link>
-                    <div className='lg:w-6/12 w-full flex flex-col justify-center' data-aos="zoom-in">
-                        <h2 className='font-medium font-sans capitalize text-dark-black lg:text-3xl md:text-xl text-lg md:text-start text-center'>umrah service</h2>
-                        <p className='text-half-black md:text-base text-sm xl:my-5 lg:my-4 md:my-3 my-2'>We specialize in offering exceptional Umrah services that turn your spiritual aspirations into memorable journeys. We emphasize modern travel principles and reliable logistics to ensure your Umrah experience is not only seamless but also deeply fulfilling. Our dedicated team utilizes the latest technology to provide personalized packages that cater to the unique needs of every pilgrim.With a commitment to excellence, we guarantee a smooth travel experience that allows you to focus on your spiritual journey while we take care of the details.</p>
-                        <div className='flex gap-2 md:justify-normal justify-center'>
-                            <Link href="#" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">live site</Link>
-                            |
-                            <Link href="https://github.com/abdulaziz4444" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">github</Link>
-                        </div>
-                    </div>
+const Services = () => {
+  const sliderRef = useRef(null);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <section
+      className="lg:pt-16 md:pt-12 pt-6 md:pb-10 pb-6 relative overflow-hidden bg-[#FDFFFC]"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-offset="0"
+    >
+      <div className="md:container mx-auto px-5">
+        <h2
+          className="xl:text-3xl lg:text-2xl md:text-xl text-lg text-goldenyellow font-medium font-lufga capitalize md:text-start text-center"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          latest projects
+        </h2>
+        {/* Slider */}
+        <div className=" lg:mt-10 md:mt-5 mt-2 relative">
+          <Slider ref={sliderRef} {...settings}>
+            {ProjectsData.map((card) => (
+              <Link
+                href={card.link}
+                key={card.id}
+                target="blank"
+                className="md:px-7 px-3"
+              >
+                <div className="bg-[#00BD901A]/20 rounded-[10px] overflow-hidden group">
+                  {/* Top Image */}
+                  <div className="relative">
+                    <Image
+                      src={card.image}
+                      alt={card.imageAlt}
+                      width={330}
+                      height={220}
+                      className="md:h-[240px] h-[170px] w-full object-cover"
+                    />
+                  </div>
+                  {/* Bottom Section */}
+                  <div className="bg-[#FEB36A] hover:bg-goldenyellow transition-all duration-300 md:px-5 px-2.5  lg:pt-12 pt-8 md:pb-5 pb-2.5">
+                    <h2 className="font-semibold font-lufga uppercase md:text-[22px] text-[18px] text-[#232424] lg:leading-[28px]">
+                      {card.title}
+                    </h2>
+                  </div>
                 </div>
-                {/* project 2 */}
-                <div className='xl:mt-12 lg:mt-10 md:mt-8 mt-4 flex xl:gap-28 lg:gap-20 md:gap-8 gap-4 lg:flex-nowrap flex-wrap'>
-                    <div className='lg:w-6/12 w-full flex flex-col justify-center' data-aos="zoom-in">
-                        <h2 className='font-medium font-sans capitalize text-dark-black lg:text-3xl md:text-xl text-lg md:text-start text-center'>quadruple solutions</h2>
-                        <p className='text-half-black md:text-base text-sm xl:my-5 lg:my-4 md:my-3 my-2'>specializes in delivering high-quality web development services that transform your digital ideas into captivating online experiences. We focus on modern design principles and robust functionality to ensure your website not only stands out but also meets the unique needs of your audience.
+              </Link>
+            ))}
+          </Slider>
+          {/* Custom  Buttons */}
+          <div className="flex md:justify-between md:gap-0 gap-40 justify-center items-center lg:mt-5 mt-2">
+            <button
+              onClick={() => sliderRef.current.slickNext()}
+              className="md:w-[50px] w-[30px] md:h-[50px] h-[30px] flex items-center justify-center rounded-full bg-[#2D4F46] group hover:bg-goldenyellow transition-all duration-300 btn-ripple border-[1.5px] border-darkTeal hover:border-goldenYellow"
+            >
+              <ChevronLeft className="text-white" />
+            </button>
+            <button
+              onClick={() => sliderRef.current.slickPrev()}
+              className="md:w-[50px] w-[30px] md:h-[50px] h-[30px]  flex items-center justify-center rounded-full bg-[#2D4F46] group hover:bg-goldenyellow  transition-all duration-300 btn-ripple border-[1.5px] border-darkTeal hover:border-goldenYellow"
+            >
+              <ChevronRight className="text-white" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-                            Our team of skilled developers utilizes cutting-edge technologies, including Next.js, JavaScript, and Tailwind CSS, to create responsive and visually stunning websites. With a commitment to excellence, we guarantee a seamless user experience that engages visitors and drives conversions.</p>
-                        <div className='flex gap-2 md:justify-normal justify-center'>
-                            <Link href="https://quadsol.co/" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">live site</Link>
-                            |
-                            <Link href="https://github.com/abdulaziz4444" target='blank' className="font-medium font-sans uppercase md:text-lg text-base hover:text-orange duration-300 hover:opacity-75">github</Link>
-                        </div>
-                    </div>
-                    <div className='lg:w-5/12 w-full'>
-                    <Link href="https://quadsol.co/"  data-aos="zoom-out">
-                        <Image src="/images/quadsol.png" alt='quadruple' width={400} height={500} className='rounded-xl border-2 w-full' />
-                    </Link>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export default Projects
+export default Services;

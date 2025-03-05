@@ -3,7 +3,92 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/LufgaLight.woff2") format("woff2"),
+    url("../../public/fonts/LufgaLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/LufgaRegular.woff2") format("woff2"),
+    url("../../public/fonts/LufgaRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/LufgaMedium.woff2") format("woff2"),
+    url("../../public/fonts/LufgaMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/LufgaSemiBold.woff2") format("woff2"),
+    url("../../public/fonts/LufgaSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../../public/fonts/LufgaBold.woff2") format("woff2"),
+    url("../../public/fonts/LufgaBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* button animation */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
   }
-  
- 
+  50% {
+    transform: scale(10);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(35);
+    opacity: 0;
+  }
+}
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-ripple:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-ripple::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.btn-ripple:hover::after {
+  animation: ripple 0.6s ease-out;
+}
