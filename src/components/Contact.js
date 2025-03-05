@@ -42,7 +42,7 @@ const Contact = () => {
                         <h2 className='xl:text-3xl lg:text-2xl md:text-xl text-lg uppercase font-semibold font-lufga md:text-start text-center text-[#232424]' >
                             contact <span className='text-goldenyellow'>with me</span>
                         </h2>
-                        <p className='text-gray-600 md:text-base text-sm md:mt-4 mt-2 font-lufga'>
+                        <p className='text-gray-600 md:text-base text-sm md:mt-4 mt-2 font-lufga md:text-start text-center'>
                             Feel free to reach out anytime! I am to respond to all messages within 24 hours on weekdays.
                             Whether you have a project in mind or just want to say hello, I&#39;m here to chat and answer any questions you may have, thanks
                         </p>
