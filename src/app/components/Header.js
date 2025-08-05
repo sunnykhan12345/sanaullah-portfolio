@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import HamBurger from "./HamBurger";
+import Image from "next/image";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -56,7 +58,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`fixed w-full top-0 z-50 py-6 transition-colors duration-300 ${
+      className={`fixed w-full top-0 z-50 md:py-5 py-3 transition-colors duration-300 ${
         scrolled ? "bg-[#F9FAFF] shadow-sm" : "bg-transparent"
       }`}
       variants={headerVariants}
@@ -66,11 +68,14 @@ const Header = () => {
       <div className="container">
         <nav className="flex items-center justify-between">
           <motion.div variants={itemVariants}>
-            <Link
-              href="/"
-              className="text-2xl font-bold font-lufga text-[#25282B]"
-            >
-              A.A
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                alt="A.A Logo"
+                width={120}
+                height={40}
+                className="h-10 md:w-[120px] w-[80px] object-cover"
+              />
             </Link>
           </motion.div>
 
@@ -91,6 +96,9 @@ const Header = () => {
               </motion.li>
             ))}
           </motion.ul>
+          <div className="md:hidden block">
+            <HamBurger />
+          </div>
         </nav>
       </div>
     </motion.header>
