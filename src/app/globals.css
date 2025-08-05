@@ -46,51 +46,71 @@ html {
   font-style: normal;
 }
 
-
-/* button animation */
-@keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 1;
+/* Animations */
+@keyframes slowPulse {
+  0%,
+  100% {
+    transform: scale(1);
   }
   50% {
-    transform: scale(10);
-    opacity: 0.3;
+    transform: scale(1.03);
   }
+}
+
+@keyframes bounceSlow {
+  0%,
   100% {
-    transform: scale(35);
-    opacity: 0;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
   }
 }
 
-.btn-ripple {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
+/* LinkedIn Button */
+.linkedin-btn {
+  animation: slowPulse 3s ease-in-out infinite;
 }
 
-.btn-ripple:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-.btn-ripple::after {
-  content: "";
-  display: block;
+.linkedin-btn .btn-hover-bg-left {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
+  inset: 0;
+  background-color: #25282b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 0;
 }
 
-.btn-ripple:hover::after {
-  animation: ripple 0.6s ease-out;
+.linkedin-btn:hover .btn-hover-bg-left {
+  transform: scaleX(1);
+}
+
+.linkedin-btn:hover {
+  color: #f9faff;
+}
+
+/* Upwork Button */
+.upwork-btn {
+  animation: bounceSlow 4s ease-in-out infinite;
+}
+
+.upwork-btn .btn-hover-bg-right {
+  position: absolute;
+  inset: 0;
+  background-color: #25282b;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.upwork-btn:hover .btn-hover-bg-right {
+  transform: scaleX(1);
+}
+
+.upwork-btn:hover {
+  color: #fdc435;
 }
 
 

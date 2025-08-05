@@ -1,32 +1,18 @@
-"use client"
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import React, { useEffect } from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import React from "react";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 const page = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      easing: "ease-in-out",
-      once: true
-    })
-  }, [])
   return (
     <>
-      <Header />
       <Hero />
       <Projects />
-      <Skills />
+      <About />
       <Contact />
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;
