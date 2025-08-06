@@ -17,6 +17,7 @@ const Hero = () => {
       },
     },
   }
+  // naooooeeee
 
   const textVariants = {
     hidden: {
