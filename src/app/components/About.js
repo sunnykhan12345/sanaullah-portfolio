@@ -41,7 +41,11 @@ const About = () => {
   };
 
   return (
-    <section className="bg-[#F9FAFF]  xl:py-28 lg:py-20 md:py-16 py-8" ref={sectionRef} id="about">
+    <section
+      className="bg-[#F9FAFF]  xl:py-28 lg:py-20 md:py-16 py-8"
+      ref={sectionRef}
+      id="about"
+    >
       <motion.div
         className="container flex xl:gap-40 md:gap-10 gap-7 items-center justify-center lg:flex-nowrap flex-wrap"
         variants={container}
@@ -60,7 +64,7 @@ const About = () => {
             className="lg:py-8 md:py-4 py-2 lg:text-2xl md:text-base text-sm font-lufga font-normal text-[#828282]"
             variants={fadeUp}
           >
-            I'm Abdul Aziz, a passionate Front-End Developer with a strong focus
+            I'm Sana Ullah, a passionate Front-End Developer with a strong focus
             on building elegant, high-performance web interfaces. My journey
             began with a curiosity for how websites work, and it quickly turned
             into a deep dedication to writing clean, scalable code. I specialize
@@ -72,7 +76,7 @@ const About = () => {
 
           <motion.div variants={fadeUp}>
             <a
-              href="/AbdulAziz-Resume.pdf"
+              href="/Sana-ullah-Cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="upwork-btn bg-yellow md:py-2 py-1.5 md:px-6 px-4 font-lufga text-[#25282B] capitalize font-medium md:text-lg rounded-lg relative overflow-hidden group"
@@ -84,11 +88,14 @@ const About = () => {
         </div>
 
         {/* Right side */}
-        <motion.div className="lg:w-5/12 w-full flex-1 flex items-center justify-center" variants={imageAnimation}>
+        <motion.div
+          className="lg:w-5/12 w-full flex-1 flex items-center justify-center"
+          variants={imageAnimation}
+        >
           <div className="relative md:w-[400px] w-[300px] md:h-[410px] h-[300px] rounded-full bg-gradient-to-tr from-yellow via-orange-300 to-yellow-400 p-1 shadow-xl hover:scale-105 transition-transform duration-300">
             <div className="w-full h-full rounded-full overflow-hidden bg-white">
               <Image
-                src="/images/bhai-2.png"
+                src="/images/sunny.png"
                 alt="About Image"
                 width={400}
                 height={410}

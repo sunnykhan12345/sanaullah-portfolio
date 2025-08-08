@@ -67,16 +67,15 @@ const Header = () => {
     >
       <div className="container">
         <nav className="flex items-center justify-between">
-          <motion.div variants={itemVariants}>
-            <Link href="/">
-              <Image
-                src="/images/logo.png"
-                alt="A.A Logo"
-                width={120}
-                height={40}
-                className="h-10 md:w-[120px] w-[80px] object-cover"
-              />
-            </Link>
+          <motion.div
+            variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+            className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r from-yellow to-indigo-600 shadow-lg"
+            aria-label="Sana Ullah Logo"
+            title="Sana Ullah"
+          >
+            <span className="text-white font-bold text-4xl select-none">S</span>
           </motion.div>
 
           <motion.ul
