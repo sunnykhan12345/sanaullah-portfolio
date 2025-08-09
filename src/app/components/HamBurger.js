@@ -64,7 +64,7 @@ const HamBurger = () => {
             className="flex flex-col gap-6 mt-6"
             variants={headerVariants}
           >
-            {["about", "projects", "contact"].map((item) => (
+            {["about", "projects", "contact", "Skills"].map((item) => (
               <motion.li key={item} variants={itemVariants}>
                 <motion.div whileHover={linkHover}>
                   <Link

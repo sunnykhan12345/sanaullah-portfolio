@@ -76,7 +76,7 @@ const skillCategories = [
 
 export default function SkillsSection() {
   return (
-    <section className="w-full py-16 bg-[#F9FAFF] dark:bg-gray-900">
+    <section className="w-full py-16 bg-[#F9FAFF] dark:bg-gray-900" id="Skills">
       <div className="px-6 md:px-16 lg:px-24 xl:px-32">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
