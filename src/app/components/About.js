@@ -42,12 +42,12 @@ const About = () => {
 
   return (
     <section
-      className="bg-[#F9FAFF]  xl:py-28 lg:py-20 md:py-16 py-8"
+      className="bg-[#F9FAFF] xl:py-28 lg:py-20 md:py-16 py-8"
       ref={sectionRef}
       id="about"
     >
       <motion.div
-        className="container flex xl:gap-40 md:gap-10 gap-7 items-center justify-center lg:flex-nowrap flex-wrap"
+        className="container flex xl:gap-20 md:gap-10 gap-7 items-center justify-center lg:flex-nowrap flex-wrap"
         variants={container}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

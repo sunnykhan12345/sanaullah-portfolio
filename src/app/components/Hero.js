@@ -146,12 +146,12 @@ const Hero = () => {
         <Header />
         <div className="container">
           <motion.div
-            className="flex xl:gap-52 lg:flex-row flex-col md:gap-10 gap-7"
+            className="flex xl:gap-5 lg:flex-row flex-col md:gap-10 gap-7"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-            {/* Left Content */}
+          
             {/* Left Content */}
             <div className="lg:w-6/12 w-full xl:pt-16 pt-10">
               <motion.span
@@ -250,7 +250,7 @@ const Hero = () => {
             {/* Right Content  */}
             <div className="lg:w-6/12 w-full flex-1 flex  items-center justify-center ">
               <motion.div
-                className="xl:w-[524px] md:w-[424px] w-[324px] xl:h-[524px] md:h-[424px] h-[324px] rounded-full bg-yellow flex items-center justify-center overflow-hidden relative"
+                className="xl:w-[524px] md:w-[424px] w-[324px] xl:h-[524px] flex-shrink-0 md:h-[424px] h-[324px] rounded-full bg-yellow flex items-center justify-center overflow-hidden relative"
                 variants={circleVariants}
                 animate={floatingAnimation}
               >
