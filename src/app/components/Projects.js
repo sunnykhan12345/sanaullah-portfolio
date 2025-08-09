@@ -381,7 +381,7 @@ const Projects = () => {
         className="bg-[#F9FAFF] xl:py-28 lg:py-20 md:py-16 py-8"
         id="projects"
       >
-        <div className="lg:max-w-[1100px] w-full mx-auto">
+        <div className="px-6 md:px-16 lg:px-24 xl:px-32">
           <h2 className="font-bold font-lufga lg:text-5xl md:text-3xl text-2xl text-[#25282B] capitalize text-center">
             projects
           </h2>

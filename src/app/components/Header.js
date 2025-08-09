@@ -65,7 +65,7 @@ const Header = () => {
       initial="hidden"
       animate="visible"
     >
-      <div className="container">
+      <div className="px-6 md:px-16 lg:px-24 xl:px-32">
         <nav className="flex items-center justify-between">
           <motion.div
             variants={itemVariants}

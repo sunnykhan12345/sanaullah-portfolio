@@ -47,7 +47,7 @@ const About = () => {
       id="about"
     >
       <motion.div
-        className="container flex xl:gap-20 md:gap-10 gap-7 items-center justify-center lg:flex-nowrap flex-wrap"
+        className="px-6 md:px-16 lg:px-24 xl:px-32 flex xl:gap-20 md:gap-10 gap-7 items-center justify-center lg:flex-nowrap flex-wrap"
         variants={container}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

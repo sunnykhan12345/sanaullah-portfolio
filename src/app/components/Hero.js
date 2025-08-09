@@ -144,14 +144,13 @@ const Hero = () => {
           }}
         />
         <Header />
-        <div className="container">
+        <div className="px-6 md:px-16 lg:px-24 xl:px-32">
           <motion.div
             className="flex xl:gap-5 lg:flex-row flex-col md:gap-10 gap-7"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-          
             {/* Left Content */}
             <div className="lg:w-6/12 w-full xl:pt-16 pt-10">
               <motion.span
