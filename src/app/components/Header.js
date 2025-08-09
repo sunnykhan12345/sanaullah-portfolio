@@ -67,16 +67,20 @@ const Header = () => {
     >
       <div className="px-6 md:px-16 lg:px-24 xl:px-32">
         <nav className="flex items-center justify-between">
-          <motion.div
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r from-yellow to-indigo-600 shadow-lg"
-            aria-label="Sana Ullah Logo"
-            title="Sana Ullah"
-          >
-            <span className="text-white font-bold text-4xl select-none">S</span>
-          </motion.div>
+          <Link href={"/"}>
+            <motion.div
+              variants={itemVariants}
+              initial="hidden"
+              animate="visible"
+              className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r from-yellow to-indigo-600 shadow-lg"
+              aria-label="Sana Ullah Logo"
+              title="Sana Ullah"
+            >
+              <span className="text-white font-bold text-4xl select-none">
+                S
+              </span>
+            </motion.div>
+          </Link>
 
           <motion.ul
             className="md:flex items-center gap-8 hidden"
