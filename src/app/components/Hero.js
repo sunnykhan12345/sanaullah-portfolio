@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Header from "./Header";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   // Animation variants for different elements
@@ -18,7 +19,6 @@ const Hero = () => {
     },
   };
   // naooooeeee
-
   const textVariants = {
     hidden: {
       opacity: 0,
@@ -167,12 +167,26 @@ const Hero = () => {
               >
                 Experience: 1 year 5 months
               </motion.span>
-
               <motion.h2
                 className="font-bold font-lufga lg:text-5xl md:text-3xl text-2xl text-[#25282B] md:pt-3 pt-1"
                 variants={textVariants}
+                initial="hidden"
+                animate="visible"
               >
-                Hello, My Name <br /> Is Sana Ullah
+                Hello, My Name Is
+                <br />
+                <span className="ext-blue-600 text-[#FDC435]">
+                  <Typewriter
+                    options={{
+                      strings: ["Sana Ullah"],
+                      autoStart: true,
+                      loop: true,
+                      delay: 75,
+                      deleteSpeed: 50,
+                      cursor: "_",
+                    }}
+                  />
+                </span>
               </motion.h2>
 
               <motion.p
