@@ -42,7 +42,7 @@ const About = () => {
 
   return (
     <section
-      className="bg-[#F9FAFF] xl:py-28 lg:py-20 md:py-16 py-8"
+      className="bg-[#f5f1ea] xl:py-28 lg:py-20 md:py-16 py-8"
       ref={sectionRef}
       id="about"
     >
@@ -61,7 +61,7 @@ const About = () => {
             About me
           </motion.h2>
           <motion.p
-            className="lg:py-8 md:py-4 py-2 lg:text-2xl md:text-base text-sm font-lufga font-normal text-[#828282]"
+            className="lg:py-8 md:py-4 py-2 lg:text-2xl  text-sm font-lufga font-normal text-[#828282]"
             variants={fadeUp}
           >
             I'm Sana Ullah, a passionate Front-End Developer with a strong focus
@@ -79,7 +79,7 @@ const About = () => {
               href="/Sana-ullah-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="upwork-btn bg-yellow md:py-2 py-1.5 md:px-6 px-4 font-lufga text-[#25282B] capitalize font-medium md:text-lg rounded-lg relative overflow-hidden group"
+              className="upwork-btn bg-[#af9f8a] md:py-2 py-1.5 md:px-6 px-4 font-lufga text-[#fff] capitalize font-medium md:text-lg rounded-lg relative overflow-hidden group"
             >
               <span className="relative z-10">Resume</span>
               <span className="btn-hover-bg-right"></span>
@@ -92,8 +92,8 @@ const About = () => {
           className="lg:w-5/12 w-full flex-1 flex items-center justify-center"
           variants={imageAnimation}
         >
-          <div className="relative md:w-[400px] w-[300px] md:h-[410px] h-[300px] rounded-full bg-gradient-to-tr from-yellow via-orange-300 to-yellow-400 p-1 shadow-xl hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full rounded-full overflow-hidden bg-white">
+          <div className="relative md:w-[400px] w-[300px] md:h-[410px] h-[300px] rounded-full  p-1 shadow-xl hover:scale-105 transition-transform duration-300">
+            <div className="w-full h-full rounded-full overflow-hidden bg-[#af9f8a]">
               <Image
                 src="/images/sunny.png"
                 alt="About Image"

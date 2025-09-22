@@ -198,7 +198,7 @@ const skillCategories = [
 
 export default function SkillsSection() {
   return (
-    <section className="w-full py-16 bg-[#F9FAFF] dark:bg-gray-900" id="Skills">
+    <section className="w-full py-16 bg-[#f5f1ea] dark:bg-gray-900" id="Skills">
       <div className="px-6 md:px-16 lg:px-24 xl:px-32">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
@@ -214,10 +214,10 @@ export default function SkillsSection() {
           {skillCategories.map((category) => (
             <Card
               key={category.title}
-              className="hover:shadow-xl bg-gray-50 hover:scale-[1.02] transition-transform duration-300 border border-gray-200 dark:border-gray-700 rounded-2xl  dark:bg-gray-800"
+              className="hover:shadow-xl bg-transparent  hover:scale-[1.02] transition-transform duration-300 border border-gray-200 dark:border-gray-700 rounded-2xl  dark:bg-gray-800"
             >
               <CardHeader className="pb-4 border-b border-gray-200 dark:border-gray-700 flex items-center gap-3">
-                <div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-md">
+                <div className="p-2 dark:bg-gray-700 rounded-md">
                   <category.icon className={`h-6 w-6 ${category.iconColor}`} />
                 </div>
                 <CardTitle className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -229,7 +229,7 @@ export default function SkillsSection() {
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="flex items-center gap-3 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg shadow-sm text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                    className="flex items-center gap-3 px-4 py-2  dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg shadow-sm text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition"
                   >
                     <skill.icon className={`h-5 w-5 ${category.iconColor}`} />
                     <span className="text-gray-800 dark:text-gray-200">

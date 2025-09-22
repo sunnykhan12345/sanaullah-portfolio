@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Footer from "./Footer";
 
 const Contact = () => {
   const sectionRef = useRef(null);
@@ -60,7 +59,7 @@ const Contact = () => {
   return (
     <>
       <section
-        className="bg-[#F9FAFF] xl:pt-20 lg:pt-10 md:pt-7"
+        className="bg-[#f5f1ea] xl:pt-20 lg:pt-10 md:pt-7 pb-5"
         ref={sectionRef}
         id="contact"
       >
@@ -76,7 +75,7 @@ const Contact = () => {
               Contact
             </h2>
             <motion.div
-              className="bg-yellow h-1 w-28 mx-auto md:mt-3 mt-1"
+              className="bg-[#af9f8a] h-1 w-28 mx-auto md:mt-3 mt-1"
               initial={{ width: 0 }}
               animate={isInView ? { width: "7rem" } : { width: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -105,7 +104,8 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                className="w-full bg-white border border-[#E8ECF4] rounded-lg outline-none py-2 px-3 md:mt-2 mt-1 focus:border-yellow transition-colors"
+                placeholder="Name"
+                className="w-full bg-transparent text-[#af9f8a] border border-[#af9f8a] rounded-lg outline-none py-2 px-3 md:mt-2 mt-1 focus:border-yellow transition-colors"
               />
             </motion.div>
 
@@ -117,7 +117,8 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                className="w-full bg-white border border-[#E8ECF4] rounded-lg outline-none py-2 px-3 md:mt-2 mt-1 focus:border-yellow transition-colors"
+                placeholder="Email"
+                className="w-full text-[#af9f8a] bg-transparent border-[#af9f8a] border  rounded-lg outline-none py-2 px-3 md:mt-2 mt-1 focus:border-yellow transition-colors"
               />
             </motion.div>
 
@@ -128,14 +129,15 @@ const Contact = () => {
               </label>
               <textarea
                 name="message"
+                placeholder="Enter Message there....."
                 rows={5}
-                className="w-full p-2 bg-white border border-[#E8ECF4] rounded-lg focus:outline-none outline-none md:mt-2 mt-1 focus:border-yellow transition-colors"
+                className="w-full p-2 bg-transparent text-[#af9f8a]  border-[#af9f8a] border  rounded-lg focus:outline-none outline-none md:mt-2 mt-1 focus:border-yellow transition-colors"
               ></textarea>
             </motion.div>
             <motion.div variants={fadeUp}>
               <button
                 type="submit"
-                className="upwork-btn bg-yellow text-[#25282B] text-lg font-lufga font-medium md:px-6 px-4 md:py-2 py-1.5 md:rounded-lg rounded-md md:mt-6 mt-0 self-end relative overflow-hidden group"
+                className="upwork-btn bg-[#af9f8a] text-[#fff] text-lg font-lufga font-medium md:px-6 px-4 md:py-2 py-1.5 md:rounded-lg rounded-md md:mt-6 mt-0 self-end relative overflow-hidden group"
               >
                 <span className="relative z-10">Send</span>
                 <span className="btn-hover-bg-right"></span>
@@ -144,7 +146,7 @@ const Contact = () => {
 
             {/* Social Icons */}
             <motion.div
-              className="flex justify-center items-center gap-6 w-full md:pt-6 pt-2"
+              className="flex justify-center items-center gap-6 w-full md:pt-6 pt-2  "
               variants={socialContainer}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
@@ -156,9 +158,9 @@ const Contact = () => {
                 variants={socialIcon}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-black hover:text-yellow"
+                className=" bg-[#af9f8a] hover:bg-[#af9f8a] w-8 h-8 rounded-full flex justify-center items-center"
               >
-                <FaGithub className="text-3xl cursor-pointer" />
+                <FaGithub className="w-6 h-6 cursor-pointer text-white" />
               </motion.a>
 
               <motion.a
@@ -168,9 +170,9 @@ const Contact = () => {
                 variants={socialIcon}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-black hover:text-yellow"
+                className=" bg-[#af9f8a] hover:bg-[#af9f8a] w-8 h-8 rounded-full flex justify-center items-center"
               >
-                <FaLinkedin className="text-3xl cursor-pointer" />
+                <FaLinkedin className="text-white w-6 h-6 cursor-pointer" />
               </motion.a>
 
               <motion.a
@@ -178,9 +180,9 @@ const Contact = () => {
                 variants={socialIcon}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-black hover:text-yellow"
+                className=" bg-[#af9f8a] hover:bg-[#af9f8a] w-8 h-8 rounded-full flex justify-center items-center"
               >
-                <FaEnvelope className="text-3xl cursor-pointer" />
+                <FaEnvelope className="text-white w-6 h-6 cursor-pointer" />
               </motion.a>
 
               <motion.a
@@ -190,9 +192,9 @@ const Contact = () => {
                 variants={socialIcon}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-black hover:text-yellow"
+                className=" bg-[#af9f8a] hover:bg-[#af9f8a] w-8 h-8 rounded-full flex justify-center items-center"
               >
-                <FaInstagram className="text-3xl cursor-pointer" />
+                <FaInstagram className="text-white w-6 h-6 cursor-pointer" />
               </motion.a>
 
               <motion.a
@@ -202,15 +204,14 @@ const Contact = () => {
                 variants={socialIcon}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-black hover:text-yellow"
+                className=" bg-[#af9f8a] hover:bg-[#af9f8a] w-8 h-8 rounded-full flex justify-center items-center"
               >
-                <FaFacebook className="text-3xl cursor-pointer" />
+                <FaFacebook className="text-white w-6 h-6 cursor-pointer" />
               </motion.a>
             </motion.div>
           </motion.form>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

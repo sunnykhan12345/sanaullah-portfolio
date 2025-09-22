@@ -1,4 +1,3 @@
-
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -112,7 +111,7 @@ const Projects = () => {
     <>
       <section
         ref={projectsRef}
-        className="bg-[#F9FAFF] xl:py-28 lg:py-20 md:py-16 py-8"
+        className="bg-[#f5f1ea] xl:py-28 lg:py-20 md:py-16 py-8"
         id="projects"
       >
         <div className="px-6 md:px-16 lg:px-24 xl:px-32">
@@ -126,8 +125,8 @@ const Projects = () => {
                 key={project.id}
                 className="flex md:flex-row flex-col justify-center  rounded-3xl shadow-lg  items-stretch 
               overflow-hidden 
-             bg-gradient-to-br from-white via-[#fdfdfd] to-[#f7f9ff] 
-             border border-gray-100 hover:shadow-xl transition-all duration-300" // Unified card styling
+             g-[#f1f1f1] 
+             border border-[#af9f8a] hover:shadow-xl transition-all duration-300" // Unified card styling
                 variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -146,7 +145,7 @@ const Projects = () => {
                         <Link
                           href={project.link}
                           target="_blank"
-                          className="group relative py-2 md:px-5 px-3 text-[#25282B] font-lufga font-medium md:text-lg text-sm bg-white w-fit rounded-3xl border border-[#25282B] overflow-hidden transition-all duration-300 ease-in-out hover:bg-[#25282B] hover:text-white hover:shadow-lg"
+                          className="group relative py-2 md:px-5 px-3 text-white font-lufga font-medium md:text-lg text-sm bg-[#af9f8a] w-fit rounded-3xl  overflow-hidden transition-all duration-300 ease-in-out hover:bg-[#25282B] hover:text-white hover:shadow-lg"
                         >
                           <span className="relative z-10">View Project</span>
                           <span className="absolute inset-0 bg-[#25282B] scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-300 ease-in-out z-0"></span>
@@ -200,7 +199,7 @@ const Projects = () => {
                         <Link
                           href={project.link}
                           target="_blank"
-                          className="group relative py-2 md:px-5 px-3 text-[#25282B] font-lufga font-medium md:text-lg text-sm bg-white w-fit rounded-3xl border border-[#25282B] overflow-hidden transition-all duration-300 ease-in-out hover:bg-[#25282B] hover:text-white hover:shadow-lg"
+                          className="group relative py-2 md:px-5 px-3 text-white font-lufga font-medium md:text-lg text-sm bg-[#af9f8a] w-fit rounded-3xl  overflow-hidden transition-all duration-300 ease-in-out hover:bg-[#25282B] hover:text-white hover:shadow-lg"
                         >
                           <span className="relative z-10">View Project</span>
                           <span className="absolute inset-0 bg-[#25282B] scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-300 ease-in-out z-0"></span>
@@ -223,7 +222,7 @@ const Projects = () => {
           <div className="flex justify-center lg:mt-16 md:mt-10 mt-5">
             <button
               onClick={handleToggle}
-              className="md:py-3 py-2 md:px-6 px-4 bg-[#25282B] text-white md:text-lg font-medium rounded-full hover:bg-[#FDC435] hover:text-black transition duration-300"
+              className="md:py-3 py-2 md:px-6 px-4 bg-[#af9f8a] text-white md:text-lg font-medium rounded-full hover:bg-black  transition duration-300"
             >
               {showAll ? "See Less Projects" : "Explore All Projects"}
             </button>

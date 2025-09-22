@@ -59,7 +59,7 @@ const Header = () => {
   return (
     <motion.header
       className={`fixed w-full top-0 z-50 md:py-3 py-2 transition-colors duration-300 ${
-        scrolled ? "bg-[#F9FAFF] shadow-sm" : "bg-transparent"
+        scrolled ? "bg-[#f5f1ea] shadow-sm" : "bg-transparent"
       }`}
       variants={headerVariants}
       initial="hidden"
