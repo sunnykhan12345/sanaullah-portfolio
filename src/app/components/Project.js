@@ -9,7 +9,7 @@ const projectData = [
     title: "Fitness Maker",
     des: "Haus of Axion is a luxury fitness platform offering personalized, in-home training experiences. It blends elite performance, tailored wellness, and high-end lifestyle coaching for a refined approach to fitness.",
     projectPath: "https://www.hausofaxion.ca/",
-    githUrl: "https://github.com/sunnykhan12345/fitness",
+
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
   {
@@ -18,7 +18,7 @@ const projectData = [
     title: "Jobiffy Platform",
     des: "Jobifyy is a service marketplace app that connects users with skilled professionals across various fields. It allows users to post job requests, manage bookings, and grow businesses through a mobile-friendly platform available on Google Play.",
     projectPath: "https://jobifyy.com/",
-    githUrl: "https://github.com/Marvellex/jobify-web",
+
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
   {
@@ -27,7 +27,7 @@ const projectData = [
     title: "Talent Tracker",
     des: "Talent Tube is a video-based hiring platform where employers discover talent through skill reels. It supports paid trials, story-driven job posts, and one-tap bookings with Stripe escrow for a more confident hiring experience..",
     projectPath: "https://tt.mlxsoft.com/",
-    githUrl: "https://github.com/Marvellex/TalentTube-web",
+
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
   {
@@ -45,7 +45,7 @@ const projectData = [
     title: "My Real Estate Guru",
     des: "My Real Estate Guru is a global real estate platform that connects buyers, renters, developers, designers, and manufacturers. It enables easy property listings, product showcases, and international lead generation through a unified and user-friendly portal.",
     projectPath: "https://myrealestate.guru/",
-    githUrl: "https://github.com/djawys/productdatav2",
+
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
   {
@@ -54,7 +54,7 @@ const projectData = [
     title: "Umrah Booking App",
     des: "Booking platform for Umrah travel, hotel, and visa with custom packages.",
     projectPath: "https://www.binhamaviation.com/",
-    githUrl: "https://github.com/Saralhossain/binham-portal",
+    // githUrl: "https://github.com/Saralhossain/binham-portal",
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
 ];
@@ -148,14 +148,14 @@ const Project = () => {
               >
                 Visit Site
               </a>
-              <a
+              {/* <a
                 href={selectedProject.githUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
               >
                 View Code
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
