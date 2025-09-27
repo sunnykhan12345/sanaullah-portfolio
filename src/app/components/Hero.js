@@ -116,7 +116,9 @@ const Hero = () => {
 
   return (
     <>
-      <section className="bg-[#f5f1ea] overflow-hidden xl:py-28 lg:py-20 md:py-16 py-8">
+      <section className="g-[#f5f1ea] lg:pb-0 pb-5 md:h-screen lg:text-start text-center relative !bg-[#050414] overflow-hidden lg:pt-32 md:pt-24 pt-16">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)]"></div>
+
         {/* Animated background */}
         <motion.div
           className="absolute top-20 left-10 w-20 h-20 bg-yellow/20 rounded-full"
@@ -153,32 +155,55 @@ const Hero = () => {
           >
             {/* Left Content */}
             <div className="lg:w-6/12 w-full xl:pt-16 pt-10">
-              <motion.span
+              {/* <motion.span
                 className="block text-[#af9f8a] font-bold font-lufga md:text-xl text-lg capitalize"
                 variants={textVariants}
               >
                 Front-End Developer
-              </motion.span>
+              </motion.span> */}
 
               {/* Experience */}
-              <motion.span
+              {/* <motion.span
                 className="block text-[#828282] font-medium font-lufga md:text-lg text-sm capitalize mt-1"
                 variants={textVariants}
               >
                 Experience: 1 year 5 months
-              </motion.span>
+              </motion.span> */}
               <motion.h2
-                className="font-bold font-lufga lg:text-4xl md:text-3xl text-2xl text-[#25282B] md:pt-3 pt-1"
+                className="font-bold font-lufga  md:text-3xl text-2xl text-white ext-[#25282B] md:pt-3 pt-1"
                 variants={textVariants}
                 initial="hidden"
                 animate="visible"
               >
-                Hello, My Name Is
+                Hello, i am
                 <br />
-                <span className="ext-blue-600 text-[#af9f8a]">
+                {/* <span className="ext-blue-600 text-[#af9f8a] md:text-4xl text-2xl">
                   <Typewriter
                     options={{
                       strings: ["Sana Ullah"],
+                      autoStart: true,
+                      loop: true,
+                      delay: 75,
+                      deleteSpeed: 50,
+                      cursor: "_",
+                    }}
+                  />
+                </span> */}
+              </motion.h2>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                Sana Ullah
+              </h2>
+              <motion.h2
+                className="flex font-bold font-lufga  md:text-3xl text-xl text-white ext-[#25282B] md:pt-3 pt-1"
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                i am
+                <span className="lg:pl-2 pl-1 ext-blue-600 text-[#af9f8a] md:text-4xl text-xl">
+                  <Typewriter
+                    options={{
+                      strings: ["FrontEnd Developer"],
                       autoStart: true,
                       loop: true,
                       delay: 75,
@@ -190,80 +215,32 @@ const Hero = () => {
               </motion.h2>
 
               <motion.p
-                className="font-normal font-lufga lg:text-xl md:text-base text-sm text-[#828282] lg:pt-8 md:pt-4 pt-2"
+                className="font-normal lg:mb-5 font-lufga lg:text-lg leading-relaxed md:text-base text-sm text-gray-400 lg:pt-8 md:pt-4 pt-2"
                 variants={textVariants}
               >
                 I&apos;m a Front-End Developer crafting modern, responsive
                 websites with clean code, seamless functionality, and great user
                 experiences. Let&apos;s build something exceptional together.
               </motion.p>
-
-              <div className="lg:pt-8 md:pt-4 pt-2 flex items-center gap-4">
-                <Link
-                  href="https://www.linkedin.com/in/sanaullah-dev/"
-                  target="blank"
-                  className="linkedin-btn md:py-2 py-1.5 md:px-4 px-2 md:rounded-lg rounded-md border border-[#25282B] bg-[#f5f1ea] capitalize font-medium font-lufga md:text-lg text-[#25282B] relative overflow-hidden group"
+              <Link href="/Sana-ullah-Resume.pdf" target="_blank" className="">
+                <button
+                  className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 ease-in-out transform hover:scale-105"
+                  style={{
+                    background: "linear-gradient(90deg,#8245ec,#a855f7)",
+                    boxShadow:
+                      "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+                  }}
                 >
-                  <span className="relative z-10">LinkedIn</span>
-                  <span className="btn-hover-bg-left"></span>
-                </Link>
-                <Link
-                  href="https://github.com/sunnykhan12345"
-                  target="blank"
-                  className="upwork-btn md:py-2 py-1.5 md:px-4 px-2 md:rounded-lg rounded-md bg-[#af9f8a] text-white capitalize font-medium font-lufga md:text-lg  relative overflow-hidden group"
-                >
-                  <span className="relative z-10">Github</span>
-                  <span className="btn-hover-bg-right"></span>
-                </Link>
-              </div>
+                  Download CV
+                </button>
+              </Link>
             </div>
 
-            {/* <div className="lg:w-6/12 w-full xl:pt-16 pt-10">
-              <motion.span
-                className="block text-[#FDC435] font-bold font-lufga md:text-xl text-lg capitalize"
-                variants={textVariants}
-              >
-                front-End developer
-              </motion.span>
-
-              <motion.h2
-                className="font-bold font-lufga lg:text-5xl md:text-3xl text-2xl text-[#25282B] md:pt-3 pt-1"
-                variants={textVariants}
-              >
-                Hello, My Name <br /> Is Sana Ullah
-              </motion.h2>
-
-              <motion.p
-                className="font-normal font-lufga lg:text-2xl md:text-base text-sm text-[#828282] lg:pt-8 md:pt-4 pt-2"
-                variants={textVariants}
-              >
-                I&#39;m a Front-End Developer crafting modern, responsive
-                websites with clean code, seamless functionality, and great user
-                experiences. Let&#39;s build something exceptional together.
-              </motion.p>
-              <div className="lg:pt-8 md:pt-4 pt-2 flex items-center gap-4">
-                <Link
-                  href="https://www.linkedin.com/in/sanaullah-dev/"
-                  target="blank"
-                  className="linkedin-btn md:py-2 py-1.5 md:px-4 px-2 md:rounded-lg rounded-md border border-[#25282B] bg-[#F9FAFF] capitalize font-medium font-lufga md:text-lg text-[#25282B] relative overflow-hidden group"
-                >
-                  <span className="relative z-10">linkedin</span>
-                  <span className="btn-hover-bg-left"></span>
-                </Link>
-                <Link
-                  href="https://github.com/sunnykhan12345"
-                  target="blank"
-                  className="upwork-btn md:py-2 py-1.5 md:px-4 px-2 md:rounded-lg rounded-md bg-yellow capitalize font-medium font-lufga md:text-lg text-[#25282B] relative overflow-hidden group"
-                >
-                  <span className="relative z-10">Github</span>
-                  <span className="btn-hover-bg-right"></span>
-                </Link>
-              </div>
-            </div> */}
+        
             {/* Right Content  */}
-            <div className="lg:w-6/12 w-full flex-1 flex  items-center justify-center">
+            <div className="lg:w-6/12 lg:mt-10 w-full flex-1 flex  items-center justify-center md:justify-end">
               <motion.div
-                className="xl:w-[524px] md:w-[424px] w-[324px] xl:h-[524px] flex-shrink-0 md:h-[424px] h-[324px] rounded-full bg-[#af9f8a] flex items-center justify-center overflow-hidden relative"
+                className="xl:w-[500px] md:w-[424px] w-[270px] xl:h-[500px] flex-shrink-0 md:h-[424px] h-[270px] rounded-full bg-[#af9f8a] flex items-center justify-center overflow-hidden relative"
                 variants={circleVariants}
                 animate={floatingAnimation}
               >

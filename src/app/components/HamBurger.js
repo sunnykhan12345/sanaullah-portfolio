@@ -10,7 +10,7 @@ import {
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
-
+import { Github, Linkedin } from "lucide-react";
 const HamBurger = () => {
   const headerVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -51,7 +51,7 @@ const HamBurger = () => {
     <>
       <Sheet>
         <SheetTrigger>
-          <MenuIcon />
+          <MenuIcon className="text-white" />
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
@@ -77,6 +77,22 @@ const HamBurger = () => {
               </motion.li>
             ))}
           </motion.ul>
+          <div className="flex space-x-4 mt-4">
+            <Link
+              href="https://www.linkedin.com/in/sanaullah-dev/"
+              target="blank"
+              className="text-black border rounded-md p-1 hover:text-[#8245ec]"
+            >
+              <Linkedin size={20} />
+            </Link>
+            <Link
+              href="https://github.com/sunnykhan12345"
+              target="blank"
+              className="text-black border rounded-md p-1 hover:text-[#8245ec]"
+            >
+              <Github size={20} />
+            </Link>
+          </div>
         </SheetContent>
       </Sheet>
     </>

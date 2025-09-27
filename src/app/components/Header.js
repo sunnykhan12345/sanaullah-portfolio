@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import HamBurger from "./HamBurger";
 import Image from "next/image";
+import { Github, Linkedin } from "lucide-react";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-
+  const [active, setActive] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -58,8 +59,10 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`fixed w-full top-0 z-50 md:py-3 py-2 transition-colors duration-300 ${
-        scrolled ? "bg-[#f5f1ea] shadow-sm" : "bg-transparent"
+      className={`fixed w-full top-0 z-50 md:py-7 py-2 transition-colors duration-300 ${
+        scrolled
+          ? "g-[#f5f1ea] bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-sm"
+          : "bg-transparent"
       }`}
       variants={headerVariants}
       initial="hidden"
@@ -83,7 +86,7 @@ const Header = () => {
           </Link>
 
           <motion.ul
-            className="md:flex items-center gap-8 hidden"
+            className="md:flex items-center gap-8 hidden text-gray-300"
             variants={headerVariants}
           >
             {["about", "projects", "contact", "Skills"].map((item) => (
@@ -91,7 +94,9 @@ const Header = () => {
                 <motion.div whileHover={linkHover}>
                   <Link
                     href={`#${item}`}
-                    className="font-medium font-lufga text-lg text-[#25282B] hover:text-[#FDC435] transition-colors"
+                    className={`font-medium font-lufga text-base ext-white ext-[#25282B] hover:text-[#8245ec] transition-colors ${
+                      active === item.id ? "hover:text-[#8245ec] " : ""
+                    }`}
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </Link>
@@ -99,6 +104,40 @@ const Header = () => {
               </motion.li>
             ))}
           </motion.ul>
+          {/* <motion.ul
+            className="md:flex items-center gap-8 hidden text-gray-300"
+            variants={headerVariants}
+          >
+            {["about", "projects", "contact", "Skills"].map((item) => (
+              <motion.li key={item} variants={itemVariants}>
+                <motion.div whileHover={linkHover}>
+                  <Link
+                    href={`#${item}`}
+                    className="font-medium font-lufga text-lg ext-white ext-[#25282B] hover:text-[#FDC435] transition-colors"
+                  >
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </Link>
+                </motion.div>
+              </motion.li>
+            ))}
+          </motion.ul> */}
+          {/* right side icon  */}
+          <div className="lg:flex space-x-4 hidden">
+            <Link
+              href="https://www.linkedin.com/in/sanaullah-dev/"
+              target="blank"
+              className="text-gray-300 border rounded-md p-1 hover:text-[#8245ec]"
+            >
+              <Linkedin size={20} />
+            </Link>
+            <Link
+              href="https://github.com/sunnykhan12345"
+              target="blank"
+              className="text-gray-300 border rounded-md p-1 hover:text-[#8245ec]"
+            >
+              <Github size={20} />
+            </Link>
+          </div>
           <div className="md:hidden block">
             <HamBurger />
           </div>
