@@ -89,20 +89,22 @@ const Header = () => {
             className="md:flex items-center gap-8 hidden text-gray-300"
             variants={headerVariants}
           >
-            {["about", "projects", "contact", "Skills"].map((item) => (
-              <motion.li key={item} variants={itemVariants}>
-                <motion.div whileHover={linkHover}>
-                  <Link
-                    href={`#${item}`}
-                    className={`font-medium font-lufga text-base ext-white ext-[#25282B] hover:text-[#8245ec] transition-colors ${
-                      active === item.id ? "hover:text-[#8245ec] " : ""
-                    }`}
-                  >
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
-                  </Link>
-                </motion.div>
-              </motion.li>
-            ))}
+            {["about", "Skills", "Experience", "contact", "projects"].map(
+              (item) => (
+                <motion.li key={item} variants={itemVariants}>
+                  <motion.div whileHover={linkHover}>
+                    <Link
+                      href={`#${item}`}
+                      className={`font-medium font-lufga text-base ext-white ext-[#25282B] hover:text-[#8245ec] transition-colors ${
+                        active === item.id ? "hover:text-[#8245ec] " : ""
+                      }`}
+                    >
+                      {item.charAt(0).toUpperCase() + item.slice(1)}
+                    </Link>
+                  </motion.div>
+                </motion.li>
+              )
+            )}
           </motion.ul>
           {/* <motion.ul
             className="md:flex items-center gap-8 hidden text-gray-300"

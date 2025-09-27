@@ -679,8 +679,6 @@ const SkillsInfo = [
           />
         ),
       },
-   
-    
     ],
   },
 ];
@@ -688,7 +686,7 @@ const SkillsInfo = [
 const Skills = () => {
   return (
     <div
-      id="skills"
+      id="Skills"
       className="bg-[#050414] py-24 pb-24 px-6 md:px-16 lg:px-24 xl:px-32"
     >
       {/* Section title */}

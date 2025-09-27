@@ -5,15 +5,19 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import SkillsSection from "./components/SkillsSection";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 const page = () => {
   return (
     <>
       <Hero />
       <Skills />
-      <Projects />
-      <About />
-      <SkillsSection />
-      <Contact />
+      <div id="Experience">
+        <Experience />
+      </div>
+      {/* <Projects />
+      <About /> */}
+      {/* <SkillsSection /> */}
+      {/* <Contact /> */}
     </>
   );
 };
