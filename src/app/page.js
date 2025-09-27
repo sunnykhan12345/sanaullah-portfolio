@@ -6,6 +6,7 @@ import About from "./components/About";
 import SkillsSection from "./components/SkillsSection";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Project from "./components/Project";
 const page = () => {
   return (
     <>
@@ -14,10 +15,13 @@ const page = () => {
       <div id="Experience">
         <Experience />
       </div>
-      {/* <Projects />
-      <About /> */}
-      {/* <SkillsSection /> */}
-      {/* <Contact /> */}
+      <div id="projects">
+        <Project />
+      </div>
+      {/* <Projects /> */}
+      {/* <About /> 
+      <SkillsSection /> 
+     <Contact /> */}
     </>
   );
 };
