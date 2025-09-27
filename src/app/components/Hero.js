@@ -116,12 +116,12 @@ const Hero = () => {
 
   return (
     <>
-      <section className="g-[#f5f1ea] lg:pb-0 pb-5 md:h-screen lg:text-start text-center relative !bg-[#050414] overflow-hidden lg:pt-32 md:pt-24 pt-16">
+      <section className="g-[#f5f1ea] lg:pb-0 pb-5 lg:h-screen lg:text-start text-center relative !bg-[#050414] overflow-hidden lg:pt-32 md:pt-24 pt-16">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)]"></div>
 
         {/* Animated background */}
         <motion.div
-          className="absolute top-20 left-10 w-20 h-20 bg-yellow/20 rounded-full"
+          className="absolute top-20 left-10 w-20 h-20 bg-[#a855f7] rounded-full"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.6, 0.3],
@@ -133,7 +133,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-32 right-20 w-16 h-16 bg-[#FDC435]/30 rounded-full"
+          className="absolute bottom-32 right-20 w-16 h-16 bg-[#a855f7] rounded-full"
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.4, 0.7, 0.4],
@@ -155,20 +155,6 @@ const Hero = () => {
           >
             {/* Left Content */}
             <div className="lg:w-6/12 w-full xl:pt-16 pt-10">
-              {/* <motion.span
-                className="block text-[#af9f8a] font-bold font-lufga md:text-xl text-lg capitalize"
-                variants={textVariants}
-              >
-                Front-End Developer
-              </motion.span> */}
-
-              {/* Experience */}
-              {/* <motion.span
-                className="block text-[#828282] font-medium font-lufga md:text-lg text-sm capitalize mt-1"
-                variants={textVariants}
-              >
-                Experience: 1 year 5 months
-              </motion.span> */}
               <motion.h2
                 className="font-bold font-lufga  md:text-3xl text-2xl text-white ext-[#25282B] md:pt-3 pt-1"
                 variants={textVariants}
@@ -177,18 +163,6 @@ const Hero = () => {
               >
                 Hello, i am
                 <br />
-                {/* <span className="ext-blue-600 text-[#af9f8a] md:text-4xl text-2xl">
-                  <Typewriter
-                    options={{
-                      strings: ["Sana Ullah"],
-                      autoStart: true,
-                      loop: true,
-                      delay: 75,
-                      deleteSpeed: 50,
-                      cursor: "_",
-                    }}
-                  />
-                </span> */}
               </motion.h2>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
                 Sana Ullah
@@ -200,7 +174,7 @@ const Hero = () => {
                 animate="visible"
               >
                 i am
-                <span className="lg:pl-2 pl-1 ext-blue-600 text-[#af9f8a] md:text-4xl text-xl">
+                <span className="lg:pl-2 pl-1 ext-blue-600 ext-[#af9f8a] text-[#a855f7] md:text-4xl text-xl">
                   <Typewriter
                     options={{
                       strings: ["FrontEnd Developer"],
@@ -236,7 +210,6 @@ const Hero = () => {
               </Link>
             </div>
 
-        
             {/* Right Content  */}
             <div className="lg:w-6/12 lg:mt-10 w-full flex-1 flex  items-center justify-center md:justify-end">
               <motion.div
