@@ -7,6 +7,7 @@ import SkillsSection from "./components/SkillsSection";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
+import Education from "./components/Education";
 const page = () => {
   return (
     <>
@@ -17,6 +18,9 @@ const page = () => {
       </div>
       <div id="projects">
         <Project />
+      </div>
+      <div id="education">
+        <Education />
       </div>
       {/* <Projects /> */}
       {/* <About /> 
