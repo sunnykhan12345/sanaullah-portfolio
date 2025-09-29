@@ -19,7 +19,7 @@ const page = () => {
       <div id="projects">
         <Project />
       </div>
-      <div id="education">
+      <div id="Education">
         <Education />
       </div>
       {/* <Projects /> */}

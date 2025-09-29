@@ -291,7 +291,7 @@ const Skills = () => {
   return (
     <div
       id="Skills"
-      className="bg-[#050414] py-24 pb-24 px-6 md:px-16 lg:px-24 xl:px-32"
+      className="lg:pt-20 pt-14 px-6 md:px-16 lg:px-24 xl:px-32"
     >
       {/* Section title */}
       <div className="text-center mb-8">

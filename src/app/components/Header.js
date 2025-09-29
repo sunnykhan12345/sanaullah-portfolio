@@ -89,7 +89,7 @@ const Header = () => {
             className="md:flex items-center gap-8 hidden text-gray-300"
             variants={headerVariants}
           >
-            {["about", "Skills", "Experience", "contact", "projects"].map(
+            {["about", "Skills", "Experience", "projects", "Education"].map(
               (item) => (
                 <motion.li key={item} variants={itemVariants}>
                   <motion.div whileHover={linkHover}>

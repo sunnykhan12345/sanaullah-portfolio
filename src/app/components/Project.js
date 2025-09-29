@@ -76,7 +76,7 @@ const Project = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-6 md:px-16 lg:px-24 xl:px-32 bg-black"
+      className="lg:pt-20 pt-10 px-6 md:px-16 lg:px-24 xl:px-32"
     >
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">Projects</h2>

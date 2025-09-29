@@ -4,7 +4,7 @@ import React from "react";
 const educationData = [
   {
     id: 1,
-    img: "/images/education.png",
+    img: "/images/auplogo.png",
     degree: "Bachelor of Science in Computer Science",
     institution: "The University of Agriculture, Peshawar",
     date: "Aug 2020 – Aug 2024",
@@ -22,31 +22,28 @@ const educationData = [
   },
   {
     id: 2,
-    img: "/images/education.png",
+    img: "/images/masia.png",
     degree: "Frontend Web Designing Course",
     institution: "Private Institute (Rawalpindi)",
     date: "June 2022 – Sep 2022",
     location: "Rawalpindi, Pakistan",
     details:
       "Gained practical experience in HTML, CSS, JavaScript, and Bootstrap. Worked on real-world projects in a team environment, focusing on responsive design and user-friendly interfaces.",
-    skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-  },
-  {
-    id: 3,
-    img: "/images/education.png",
-    degree: "Frontend Web Designing Course",
-    institution: "Private Institute (Rawalpindi)",
-    date: "June 2022 – Sep 2022",
-    location: "Rawalpindi, Pakistan",
-    details:
-      "Gained practical experience in HTML, CSS, JavaScript, and Bootstrap. Worked on real-world projects in a team environment, focusing on responsive design and user-friendly interfaces.",
-    skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Next JS",
+      "Tailwind css",
+      "Responsive Design",
+    ],
   },
 ];
 
 const Education = () => {
   return (
-    <section id="education" className="py-24 pb-24 bg-black">
+    <section id="education" className="lg:pt-20 pt-14">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">Education</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
@@ -64,10 +61,10 @@ const Education = () => {
         {educationData.map((edu, index) => (
           <div
             key={edu.id}
-            className="relative flex flex-col sm:flex-row items-center mb-24"
+            className="relative flex flex-col sm:flex-row items-center mb-14"
           >
             {/* Timeline circle */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute left-1/2 transform lg:-mt- -mt-7 -translate-x-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={edu.img}
                 alt="logo"

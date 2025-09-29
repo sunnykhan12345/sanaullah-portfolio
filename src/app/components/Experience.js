@@ -3,7 +3,7 @@ import React from "react";
 const experiences = [
   {
     id: 0,
-    img: "/images/jiraa.png",
+    img: "/images/mlx.png",
     role: "Frontend Developer",
     company: "Marvellex Software Solutions",
     date: "June 2024 – Present · 1 yr 4 mos",
@@ -24,7 +24,7 @@ const experiences = [
   },
   {
     id: 1,
-    img: "/images/jiraa.png",
+    img: "/images/mlx.png",
     role: "Intern Frontend Developer",
     company: "Marvellex Software Solutions",
     date: "April 2024 – June 2024 · 3 mos",
@@ -37,7 +37,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24 pb-24 bg-black">
+    <section id="experience" className="lg:pt-20">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">Experience</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
@@ -57,10 +57,10 @@ const Experience = () => {
         {experiences?.map((exp, index) => (
           <div
             key={exp.id}
-            className="relative flex flex-col sm:flex-row items-center mb-24"
+            className="relative flex flex-col sm:flex-row items-center mb-14"
           >
             {/* Timeline circle */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute lg:-mt- -mt-7 left-1/2 transform -translate-x-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={exp.img}
                 alt="logo"

@@ -116,12 +116,12 @@ const Hero = () => {
 
   return (
     <>
-      <section className="g-[#f5f1ea] lg:pb-0 pb-5 lg:h-screen lg:text-start text-center relative !bg-[#050414] overflow-hidden lg:pt-32 md:pt-24 pt-16">
+      <section className="g-[#f5f1ea] lg:pb-0  lg:h-screen lg:text-start text-center relative bg-[#050414] overflow-hidden lg:pt-32 md:pt-20 pt-14">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)]"></div>
 
         {/* Animated background */}
         <motion.div
-          className="absolute top-20 left-10 w-20 h-20 bg-[#a855f7] rounded-full"
+          className="absolute top-20 left-10 lg:w-14 w-10 lg:h-14 h-10 bg-[#a855f7] rounded-full"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.6, 0.3],
@@ -198,7 +198,7 @@ const Hero = () => {
               </motion.p>
               <Link href="/Sana-ullah-Resume.pdf" target="_blank" className="">
                 <button
-                  className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 ease-in-out transform hover:scale-105"
+                  className="inline-block text-white lg:py-3 py-2 lg:px-8 px-4 rounded-full mt-5 lg:text-lg text-base font-bold transition duration-300 ease-in-out transform hover:scale-105"
                   style={{
                     background: "linear-gradient(90deg,#8245ec,#a855f7)",
                     boxShadow:
