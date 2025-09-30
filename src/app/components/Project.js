@@ -23,7 +23,7 @@ const projectData = [
   },
   {
     id: 2,
-    img: "/images/talentt.png",
+    img: "/images/tal.png",
     title: "Talent Tube",
     des: "Talent Tube is a video-based hiring platform where employers discover talent through skill reels. It supports paid trials, story-driven job posts, and one-tap bookings with Stripe escrow for a more confident hiring experience..",
     projectPath: "https://tt.mlxsoft.com/",
