@@ -97,7 +97,7 @@ const Project = () => {
               <img
                 src={proj.img}
                 alt={proj.title}
-                className="object-cover w-full  rounded-md"
+                className="object-cover w-full rounded-md"
               />
             </div>
             <div className="p-6">
