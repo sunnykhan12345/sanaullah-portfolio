@@ -116,7 +116,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="g-[#f5f1ea] lg:pb-0  lg:h-screen lg:text-start text-center relative bg-[#050414] overflow-hidden lg:pt-32 md:pt-20 pt-14">
+      <section className="g-[#f5f1ea] lg:pb-0  lg:text-start text-center relative bg-[#050414] overflow-hidden lg:pt-32 md:pt-20 pt-14">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)]"></div>
 
         {/* Animated background */}
@@ -198,7 +198,7 @@ const Hero = () => {
               </motion.p>
               <Link href="/Sana-ullah-Resume.pdf" target="_blank" className="">
                 <button
-                  className="inline-block text-white lg:py-3 py-2 lg:px-8 px-4 rounded-full mt-5 lg:text-lg text-base font-bold transition duration-300 ease-in-out transform hover:scale-105"
+                  className="inline-block text-white lg:py-3  py-2 lg:px-8 px-4 rounded-full mt-5 lg:text-lg text-base font-bold transition duration-300 ease-in-out transform hover:scale-105"
                   style={{
                     background: "linear-gradient(90deg,#8245ec,#a855f7)",
                     boxShadow:

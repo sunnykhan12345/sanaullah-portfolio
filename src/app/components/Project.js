@@ -22,6 +22,22 @@ const projectData = [
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
   {
+    id: 7,
+    img: "/images/sec.png", // Add your logo image in public/images
+    title: "SecurityNet.ai",
+    des: "AI-powered surveillance platform using advanced AI algorithms for facial recognition, real-time alerts, smart object recognition, and cloud-based monitoring.",
+    projectPath: "https://www.securitynet.ai/",
+    // githUrl: "", // Add GitHub link if available
+    tech: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Blockchain",
+      "Cloud Services",
+    ],
+  },
+
+  {
     id: 2,
     img: "/images/tal.png",
     title: "Talent Tube",
