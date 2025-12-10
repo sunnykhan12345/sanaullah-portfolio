@@ -96,7 +96,7 @@ const Experience = () => {
                   <h5 className="font-medium text-white">Skills:</h5>
                   <ul className="flex flex-wrap mt-2 gap-2">
                     {exp.skills.map((skill, index) => (
-                      <li className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg border border-gray-400">
+                      <li key={index} className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg border border-gray-400">
                         {skill}
                       </li>
                     ))}
