@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 const page = () => {
   return (
     <div>
-      v
+      
       <HeroSection />
     </div>
   );
