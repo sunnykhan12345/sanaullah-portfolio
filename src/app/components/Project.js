@@ -55,15 +55,15 @@ const projectData = [
     githUrl: "#",
     tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
   },
-  {
-    id: 4,
-    img: "/images/rl.png",
-    title: "My Real Estate Guru",
-    des: "My Real Estate Guru is a global real estate platform that connects buyers, renters, developers, designers, and manufacturers. It enables easy property listings, product showcases, and international lead generation through a unified and user-friendly portal.",
-    projectPath: "https://myrealestate.guru/",
+  // {
+  //   id: 4,
+  //   img: "/images/rl.png",
+  //   title: "My Real Estate Guru",
+  //   des: "My Real Estate Guru is a global real estate platform that connects buyers, renters, developers, designers, and manufacturers. It enables easy property listings, product showcases, and international lead generation through a unified and user-friendly portal.",
+  //   projectPath: "https://myrealestate.guru/",
 
-    tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
-  },
+  //   tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "Shadcn Ui"],
+  // },
   {
     id: 5,
     img: "/images/umr.png",
