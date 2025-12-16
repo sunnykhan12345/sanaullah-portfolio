@@ -3,17 +3,6 @@
 
 // export default nextConfig;
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  webpack: (config, { isServer }) => {
-    // Disable client-side cache to prevent ArrayBuffer allocation errors
-    if (!isServer) {
-      config.cache = false;
-    }
-    return config;
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
