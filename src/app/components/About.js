@@ -76,7 +76,7 @@ const About = () => {
 
           <motion.div variants={fadeUp}>
             <a
-              href="/Sana-ullah-Resume.pdf"
+              href="/SanaUllah_FrontEndDeveloper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="upwork-btn bg-[#af9f8a] md:py-2 py-1.5 md:px-6 px-4 font-lufga text-[#fff] capitalize font-medium md:text-lg rounded-lg relative overflow-hidden group"
