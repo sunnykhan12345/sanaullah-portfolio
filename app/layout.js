@@ -46,11 +46,11 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: '/images/sana-profile.jpg?v=4', sizes: 'any' },
-      { url: '/favicon.ico?v=4' },
+      { url: '/favicon.ico?v=5' },
+      { url: '/favicon.png?v=5', type: 'image/png' },
     ],
-    shortcut: '/images/sana-profile.jpg?v=4',
-    apple: '/images/sana-profile.jpg?v=4',
+    shortcut: '/favicon.ico?v=5',
+    apple: '/favicon.png?v=5',
   },
 };
 
@@ -58,9 +58,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`scroll-smooth ${mulish.variable} ${instrumentSans.variable} ${splineSansMono.variable}`}>
       <head>
-        <link rel="icon" href="/images/sana-profile.jpg?v=4" type="image/jpeg" />
-        <link rel="shortcut icon" href="/images/sana-profile.jpg?v=4" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/images/sana-profile.jpg?v=4" />
+        <link rel="icon" href="/favicon.ico?v=5" sizes="any" />
+        <link rel="icon" href="/favicon.png?v=5" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=5" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"

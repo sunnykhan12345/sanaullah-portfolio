@@ -39,8 +39,8 @@ export const profile = {
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
@@ -408,10 +408,10 @@ export const experiences = [
   {
     num: "01",
     company: "Pak Dev Studio",
-    role: "Frontend Developer",
+    role: "MERN Stack Developer",
     period: "Jan 2026 – Present",
     current: true,
-    description: "Working as a frontend developer on enterprise-level dashboards, CRM systems, SaaS platforms, and marketplace applications with modern UI/UX practices.",
+    description: "Working as a MERN stack developer on enterprise-level dashboards, CRM systems, SaaS platforms, and marketplace applications with modern UI/UX and full-stack practices.",
     points: [
       "Developed scalable dashboards (CRM, admin, analytics systems)",
       "Built booking and appointment management interfaces",
@@ -424,7 +424,7 @@ export const experiences = [
   {
     num: "02",
     company: "Marvellex Software Solutions",
-    role: "Frontend Developer",
+    role: "Frontend / React.js Developer",
     period: "Jan 2024 – Dec 2025",
     current: false,
     description: "Worked on enterprise web applications, dashboards, and MERN-based frontend systems with focus on responsive UI and API integration.",
@@ -438,20 +438,6 @@ export const experiences = [
   },
   {
     num: "03",
-    company: "Marvellex Software Solutions",
-    role: "Frontend Developer Intern",
-    period: "Apr 2024 – Jun 2024",
-    current: false,
-    description: "Internship focused on frontend development, UI implementation, and real-world project exposure in a professional environment.",
-    points: [
-      "Converted Figma designs into responsive React components",
-      "Assisted in building small dashboard features and UI modules",
-      "Learned API integration and state management basics",
-      "Improved responsive design and component structuring skills",
-    ],
-  },
-  {
-    num: "04",
     company: "Agriculture University Peshawar (AUP)",
     role: "Bachelor of Science in Computer Science (BSCS)",
     period: "2020 – 2024",
